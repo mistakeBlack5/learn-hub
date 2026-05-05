@@ -8,9 +8,9 @@ import {
 import { useAuth } from '../context/AuthContext';
 import { api } from '../services/api';
 import Button from '../components/common/Button';
-import { AdminChart } from '../components/admin/AdminChart';
-import { useState, useEffect } from 'react';
-import { api } from '../services/api';
+import AdminChart from '../components/admin/AdminChart'; // ✅ New chart component
+
+// ... rest of your code ...
 
 export default function AdminDashboard() {
   const { user, logout } = useAuth() || {};
